@@ -1,9 +1,8 @@
 from sqlmodel import Session, SQLModel, create_engine
+from app.core.config import DATABASE_URL
+import app.models.releve
+import app.models.ville
 
-import models.releve
-import models.ville
-
-DATABASE_URL = "sqlite:///./meteo.db"
 engine = create_engine(
     DATABASE_URL,
     echo=True,

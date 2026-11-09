@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from sqlmodel import Field, SQLModel
 
 
@@ -15,12 +13,4 @@ class VilleRead(SQLModel):
     latitude: float
     longitude: float
 
-
-class MeteoRead(SQLModel):
-    ville: str
-    temperature: float
-    vitesse_vent: float
-    date_heure: datetime
-    unite_temperature: str
-    unite_vitesse_vent: str
-
+    #Définit les données que notre API accepte ou renvoie, grâce à la validation Pydantic.

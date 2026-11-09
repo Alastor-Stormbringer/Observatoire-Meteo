@@ -9,3 +9,4 @@ class Ville(SQLModel, table=True):
     latitude: float = Field(nullable=False)
     longitude: float = Field(nullable=False)
 
+#Représente la table SQLite, grâce à SQLModel

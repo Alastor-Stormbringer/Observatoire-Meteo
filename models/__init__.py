@@ -1,5 +1,5 @@
-from models.releve import Releve
-from models.ville import Ville
+from app.models.releve import Releve
+from app.models.ville import Ville
 
 __all__ = ["Releve", "Ville"]
 
